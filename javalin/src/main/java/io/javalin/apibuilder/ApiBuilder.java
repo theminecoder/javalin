@@ -25,7 +25,9 @@ import org.jetbrains.annotations.NotNull;
  * Static methods for route declarations in Javalin
  *
  * @see Javalin#routes(EndpointGroup)
+ * @deprecated Please start using {@link io.javalin.core.Router#path(String)} instead
  */
+@Deprecated
 public class ApiBuilder {
 
     private static final ThreadLocal<Javalin> staticJavalin = new ThreadLocal<>();
